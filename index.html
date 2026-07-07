@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ангелина | UGC-креатор & Лазерный уход</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <style>
+        :root {
+            --pink-bg: #FFF0F5;
+            --pink-accent: #FF69B4;
+            --pink-dark: #C71585;
+            --text-dark: #2F4F4F;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+        body { background-color: var(--pink-bg); color: var(--text-dark); line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #fff, var(--pink-bg));
+            border-radius: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.1);
+        }
+
+        .avatar-container {
+            width: 120px; height: 120px; margin: 0 auto 20px;
+            border-radius: 50%; border: 4px solid var(--pink-accent);
+            overflow: hidden; background: #eee;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .avatar-container i { font-size: 50px; color: var(--pink-accent); }
+
+        h1 { font-size: 24px; font-weight: 700; color: var(--pink-dark); margin-bottom: 10px; }
+        .subtitle { font-size: 13px; color: #666; font-weight: 300; text-transform: uppercase; letter-spacing: 1px; }
+
+        .section-card { background: #ffffff; border-radius: 24px; padding: 25px; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.02); }
+        h2 { font-size: 18px; color: var(--pink-dark); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+        /* UGC Блок */
+        .ugc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+        .ugc-item { 
+            background: var(--pink-bg); padding: 15px; border-radius: 15px; text-align: center;
+            text-decoration: none; color: var(--text-dark); font-size: 12px; font-weight: 600;
+            border: 1px solid transparent; transition: all 0.2s;
+        }
+        .ugc-item:hover { border-color: var(--pink-accent); background: #fff; }
+        .ugc-item i { font-size: 22px; color: var(--pink-dark); margin-bottom: 8px; display: block; }
+
+        /* Прайс-лист */
+        .price-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px dashed #eee; }
+        .price-item:last-child { border-bottom: none; }
+        .price-name { font-weight: 600; font-size: 14px; }
+        .price-meta { font-size: 12px; color: #888; margin-top: 3px; }
+        .price-value { font-weight: 700; color: var(--pink-accent); white-space: nowrap; }
+        .price-badge { background-color: #FFF0F5; color: var(--pink-dark); font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 600; display: inline-block; margin-top: 5px; }
+
+        .promo-box { background: linear-gradient(135deg, var(--pink-accent), var(--pink-dark)); color: white; border-radius: 20px; padding: 20px; text-align: center; margin-bottom: 25px; }
+        
+        .cta-button {
+            display: flex; align-items: center; justify-content: center; gap: 12px;
+            background-color: #25D366; color: white; text-decoration: none; padding: 18px;
+            border-radius: 50px; font-weight: 600; font-size: 16px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); transition: transform 0.2s; margin: 30px 0;
+        }
+        .cta-button:hover { transform: scale(1.02); }
+
+        footer { text-align: center; font-size: 11px; color: #999; padding: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Шапка -->
+        <header>
+            <div class="avatar-container">
+                <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <h1>Ангелина</h1>
+            <p class="subtitle">UGC-креатор • Натуральный блонд • Йога</p>
+        </header>
+
+        <!-- БЛОК ДЛЯ БРЕНДОВ (UGC) -->
+        <div class="section-card">
+            <h2><i class="fa-solid fa-photo-film"></i> Создание контента / UGC</h2>
+            <p style="font-size: 13px; color: #555;">Создаю эстетичные, живые и вовлекающие фото/видео для брендов косметики, бьюти-гаджетов, одежды для йоги и товаров для дома. Без фальши и искусственных фильтров.</p>
+            
+            <div class="ugc-grid">
+                <a href="#" class="ugc-item" target="_blank"><i class="fa-solid fa-clapperboard"></i> Бьюти-обзоры</a>
+                <a href="#" class="ugc-item" target="_blank"><i class="fa-solid fa-spa"></i> Эстетика & Йога</a>
+                <a href="#" class="ugc-item" target="_blank"><i class="fa-solid fa-paw"></i> Уют с котом</a>
+                <a href="https://wa.me" class="ugc-item" target="_blank" style="background: #fff; border: 1px solid var(--pink-accent);"><i class="fa-solid fa-envelope"></i> Сотрудничество</a>
+            </div>
+        </div>
+
+        <!-- Подарок подписчикам -->
+        <div class="promo-box">
+            <h3>🎁 Акция для моих людей!</h3>
+            <p>Первые 5 человек, написавшие мне в Директ «ХОЧУ», получат процедуру ухода за волосами абсолютно БЕСПЛАТНО!</p>
+        </div>
+
+        <!-- Услуги лазерного ухода -->
+        <div class="section-card">
+            <h2><i class="fa-solid fa-wand-magic-sparkles"></i> Разовые процедуры</h2>
+            <p style="font-size: 13px; color: #555; margin-bottom: 15px;">Бережное восстановление хрупкого натурального блонда и снятие стресса на сертифицированном аппарате «Узормед».</p>
+            
+            <div class="price-item">
+                <div>
+                    <div class="price-name">Здоровая шея и плечи</div>
+                    <div class="price-meta">Снятие спазмов, легкость, улучшение кровотока, 30 мин</div>
+                </div>
+                <div class="price-value">1 500 ₽</div>
+            </div>
+
+            <div class="price-item">
+                <div>
+                    <div class="price-name">Активация роста волос</div>
+                    <div class="price-meta">Сохранение густоты природного блонда, 25 мин</div>
+                </div>
+                <div class="price-value">1 300 ₽</div>
+            </div>
+
+            <div class="price-item">
+                <div>
+                    <div class="price-name">Комплекс «Перезагрузка»</div>
+                    <div class="price-meta">Шея + кожа головы для максимального расслабления, 50 мин</div>
+                </div>
+                <div class="price-value">2 500 ₽</div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 15px;">
+                <span class="price-badge">🔥 Новым клиентам: -30% на первый визит!</span>
+            </div>
+        </div>
+
+        <!-- Блок абонементов -->
+        <div class="section-card">
+            <h2><i class="fa-solid fa-layer-group"></i> Выгодные абонементы</h2>
+            <p style="font-size: 12px; color: #777; margin-bottom: 10px;">Рекомендуемый курс физиотерапии — от 5-10 сеансов.</p>
+            
+            <div class="price-item">
+                <div>
+                    <div class="price-name">Курс из 5 сеансов</div>
+                    <div class="price-meta">Заметный и накопительный терапевтический эффект</div>
+                </div>
+                <div class="price-value">6 500 ₽</div>
+            </div>
+
+            <div class="price-item">
+                <div>
+                    <div class="price-name">Курс из 10 сеансов</div>
+                    <div class="price-meta">Полное восстановление + 1 сеанс в ПОДАРОК!</div>
+                </div>
+                <div class="price-value">12 000 ₽</div>
+            </div>
+        </div>
+
+        <!-- Кнопка связи -->
+        <a href="https://wa.me" class="cta-button" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="font-size: 24px;"></i>
+            Связаться / Записаться
+        </a>
+
+        <footer>
+            <p>© 2026 Ангелина. Контент & Уход. Все права защищены.</p>
+            <p style="margin-top: 5px; font-weight: 600;">Имеются противопоказания, необходима консультация специалиста.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
